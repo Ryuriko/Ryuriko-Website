@@ -1,0 +1,141 @@
+.card-img-top{
+    height: 250px;
+}
+#poster{
+    height: auto;
+}
+
+/* Templates Animation */
+
+@keyframes animation-large{
+    0%, 100%{
+        background-image: url(img/1.jpg);
+    }
+    40%{
+        background-image: url(img/2.jpg);
+    }
+    70%{
+        background-image: url(img/3.jpg);
+    }
+}
+@keyframes animation-small{
+    0%, 100%{
+        background-image: url(img/a.jpg);
+    }
+    40%{
+        background-image: url(img/b.jpg);
+    }
+    70%{
+        background-image: url(img/c.jpg);
+    }
+}
+
+/* Breakpoints Device */
+@media screen and (max-width: 375px){
+#background, #log{
+    height: 745px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animation-small 20s ease infinite;
+    }
+#letsgo{
+    margin: 85% 0 0 40%;
+    }
+div#log-form {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    width: 65%;
+    }
+}
+@media screen and (min-width: 389px){
+#background, #log{
+    height: 870px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animation-small 20s ease infinite;
+    }
+#letsgo{
+    margin: 90% 0 0 40%;
+    }
+div#log-form {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    width: 65%;
+    }
+}
+@media screen and (min-width: 500px){
+#background, #log{
+    height: 1180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animation-small 20s ease infinite;
+    }
+#letsgo{
+    margin: 85% 0 0 46.5%;
+    }
+div#log-form {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 26%;
+    }
+}
+@media screen and (min-width: 550px){
+#background, #log{
+    height: 1180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animation-small 20s ease infinite;
+    }
+#letsgo{
+    margin: 85% 0 0 46.5%;
+    }
+div#log-form {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 26%;
+    }
+}
+@media screen and (min-width: 900px){
+#background, #log{
+    height: 1350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animation-small 20s ease infinite;
+    }
+#letsgo{
+    margin: 85% 0 0 45%;
+    }
+div#log-form {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    width: 23%;
+    }
+}
+@media screen and (min-width: 1000px){
+#background, #log{
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animation-large 20s ease infinite;
+    }
+#letsgo{
+    margin: 40% 0 0 48%;
+    }
+div#log-form {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    }
+}
